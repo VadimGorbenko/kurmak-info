@@ -5,208 +5,137 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Документ</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<title>Государственный музей изобразительных искусств имени А.С. Пушкина</title>
 </head>
 
 <body>
-	<a href="#main">Перейти к основному содержимому</a>
-	<header class="site-header">
-		<nav class="site-nav">
-			<div class="site-nav__top">
-				<a class="logo" href="/" aria-label="главная страница сайта музея имени А.С. Пушкина">
-					<img src="#" alt="" class="logo__image">
-					<div class="logo__text">
-						<p class="logo__title">Государственный музей изобразительных искусств имени А.С.Пушкина</p>
-						<p class="logo__subtitle">The Pushkin State Museum of Fine Arts</p>
+	<div class="site-container">
+		<header class="site-header">
+			<nav class="site-nav">
+				<div class="site-nav__special">
+					<a href="#" class="low-vision-link">Версия для слабовидящих</a>
+					<a href="#main" class="skipplink">Перейти к основному содержимому</a>
+				</div>
+				<div class="site-nav__top">
+					<div class="logo" href="/">
+						<img src="assets/img/logo.jpg" alt="Здание - музей имени А.С. Пушкина" class="logo__image" width="200" height="42">
 					</div>
-				</a>
-				<form action="/search.php" class="inline-search">
-					<input type="text" class="inline-search__input">
-					<button type="submit" class="inline-search__sumbit" aria-label="Искать">icon</button>
-				</form>
-				<ul class="language-switcher" aria-label="Поддерживаемые языки">
-					<li>
-						<a href="#" class="language-switcher__item language-switcher__item_active">RU</a>
-					</li>
-					<li>
-						<a href="" class="language-switcher__item">EN</a>
-					</li>
-				</ul>
-				<a href="/login" class="login js-to-popup-activator" aria-label="Авторизация">icon</a>
-			</div>
-			<div class="site-nav__main">
-				<ul class="nav-list" aria-label="Основные разделы">
-					<li><a href="#" class="nav-list__link">Музей</a></li>
-					<li><a href="#" class="nav-list__link">Посетителям</a></li>
-					<li><a href="#" class="nav-list__link">Выставки и события</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<main id="main" class="site-main">
-		<section class="posters">
-			<h2 class="v-h">Афиша</h2>
-			<ul class="slider">
-				<li>
-					<article class="poster">
-						<h3 class="v-h">
-							Избранные рисунки из собрания <abbr title="государственного музея изобразительных искусств">ГМИИ</abbr> им
-							А.С. Пушкина
-						</h3>
-						<img src="#" class="poster__image" alt="Штрих-рисованные обнажённые музыканты с различными инструментами">
-						<a href="#" class="btn poster__btn">Билеты онлайн</a>
-					</article>
-				</li>
-				<li>
-					<article class="poster">
-						<h3 class="v-h">
-							Избранные рисунки из собрания <abbr title="государственного музея изобразительных искусств">ГМИИ</abbr> им
-							А.С. Пушкина
-						</h3>
-						<img src="#" class="poster__image" alt="Штрих-рисованные обнажённые музыканты с различными инструментами">
-						<a href="#" class="btn poster__btn">Билеты онлайн</a>
-					</article>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<h2 class="v-h">Быстрые ссылки</h2>
-			<ul>
-				<li><a href="#" class="btn">Купить билеты</a></li>
-				<li><a href="#" class="btn">Стать другом</a></li>
-				<li><a href="#" class="btn">Онлайн магазин</a></li>
-			</ul>
-		</section>
-		<section class="section">
-			<h2 class="title">Выставки и события</h2>
-			<div class="tabs">
-				<ul class="tabs__labels">
-					<li><a href="#playbill-tab_1" class="tabs__label tabs__label_active">Все</a></li>
-					<li><a href="#playbill-tab_2" class="tabs__label">Сегодня</a></li>
-					<li><a href="#playbill-tab_3" class="tabs__label">Завтра</a></li>
-				</ul>
-				<div class="tabs__content">
-					<div class="tab__item" id="playbill-tab_1">
-						<ul class="list">
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 20 ноября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
-										текст Текст о музее текст
-									</p>
-									<a href="#" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">Тату</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 27 сентября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
-										текст Текст о музее текст
-									</p>
-									<a href="" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ
-										им. А.С. Пушкина</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 1 ноября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
-										текст Текст о музее текст
-									</p>
-									<a href="" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-						</ul>
+					<form action="/search.php" class="inline-search" role="search">
+						<input type="search" class="inline-search__input">
+						<button type="submit" class="inline-search__sumbit" aria-label="Искать">icon</button>
+					</form>
+					<div class="language-switcher" aria-label="Поддерживаемые языки">
+						<span class="language-switcher__item language-switcher__item_active" aria-current="true" aria-label="Русский">
+							<span aria-hidden="true">RU</span>
+						</span>
+						<a href="/en" hreflang="en" aria-label="English" lang="en" class="language-switcher__item">EN</a>
 					</div>
-					<div class="tab__item" id="playbill-tab_2">
-						<ul class="list">
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 20 ноября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст
-										о музее текст</p>
-									<a href="#" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">Тату</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 27 сентября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст
-										о музее текст</p>
-									<a href="" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им.
-										А.С. Пушкина</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 1 ноября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст
-										о музее текст</p>
-									<a href="" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-						</ul>
+					<a href="/login" class="login js-to-popup-activator" aria-label="Авторизация" title="Авторизация">icon</a>
+				</div>
+				<div class="site-nav__main">
+					<ul class="nav-list" aria-label="Основные разделы">
+						<li><a href="#" class="nav-list__link">Музей</a></li>
+						<li><a href="#" class="nav-list__link">Посетителям</a></li>
+						<li><a href="#" class="nav-list__link">Выставки и события</a></li>
+						<li><a href="#" class="nav-list__link">Купить билеты</a></li>
+						<li><a href="#" class="nav-list__link">Стать другом</a></li>
+						<li><a href="#" class="nav-list__link">Онлайн магазин</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main id="main" class="site-main">
+			<section class="posters">
+				<h2 class="v-h">Анонсы</h2>
+				<div id="myCarousel" class="carousel" aria-roledescription="carousel">
+					<div class="controls">
+						<button class="previous" aria-controls="myCarousel-items" aria-label="Предыдущий слайд">
+							prev
+						</button>
+						<button class="next" aria-controls="myCarousel-items" aria-label="Следующий слайд">
+							next
+						</button>
 					</div>
-					<div class="tab__item" id="playbill-tab_3">
-						<ul>
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 20 ноября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст
-										о музее текст</p>
-									<a href="#" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">Тату</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 27 сентября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст
-										о музее текст</p>
-									<a href="" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-							<li>
-								<article class="playbill">
-									<h3 class="playbill__title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им.
-										А.С. Пушкина</h3>
-									<img src="#" alt="" class="playbill__poster">
-									<p class="playbill__date">Выставка до 1 ноября</p>
-									<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст
-										о музее текст</p>
-									<a href="" class="playbill__buy">Купить билет</a>
-								</article>
-							</li>
-						</ul>
+					<div id="myCarousel-items" class="carousel-items" aria-live="off">
+						<figure class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 из 2">
+							<img src="assets/img/slide-1.jpg" class="carousel-image" alt="Штрих-рисованные обнажённые музыканты с различными инструментами" width="1030" height="600">
+							<figcaption class="carousel-caption">
+								<p class="v-h">
+									Избранные рисунки из собрания <abbr title="государственного музея изобразительных искусств">ГМИИ</abbr> им
+									А.С. Пушкина. 10 июля - 1 ноября, главное здание.
+								</p>
+							</figcaption>
+						</figure>
+						<figure class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 из 2">
+							<img src="assets/img/slide-2.png" class="carousel-image" alt="Здание музея. Главный вход." width="1030" height="600">
+							<figcaption class="carousel-caption">
+								<p class="v-h">
+									31го мая музей будет работать бесплатно
+								</p>
+							</figcaption>
+						</figure>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="section">
-			<h2 class="title">Музей</h2>
-			<div class="tabs">
-				<ul class="tabs__labels">
-					<li><a href="#museum-tab_1" class="tabs__label tabs__label_active">Здания</a></li>
-					<li><a href="#museum-tab_2" class="tabs__label">История</a></li>
+			</section>
+			<section class="section">
+				<h2 class="title">Выставки и события</h2>
+				<div class="filters">
+					<button class="js-filter filter-label filter-label_active">Все</button>
+					<button class="js-filter filter-label">Сегодня</button>
+					<button class="js-filter filter-label">Завтра</button>
+				</div>
+				<ul class="list js-filter-target">
+					<li data-date="tomorrow">
+						<article class="playbill">
+							<h3 class="playbill__title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
+							<img src="#" alt="" class="playbill__poster">
+							<p class="playbill__date">Выставка до 20 ноября</p>
+							<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
+								текст Текст о музее текст
+							</p>
+							<a href="#" class="playbill__buy">Купить билет</a>
+						</article>
+					</li>
+					<li data-date="today">
+						<article class="playbill">
+							<h3 class="playbill__title">Тату</h3>
+							<img src="#" alt="" class="playbill__poster">
+							<p class="playbill__date">Выставка до 27 сентября</p>
+							<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
+								текст Текст о музее текст
+							</p>
+							<a href="" class="playbill__buy">Купить билет</a>
+						</article>
+					</li>
+					<li data-date="tomorrow">
+						<article class="playbill">
+							<h3 class="playbill__title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ
+								им. А.С. Пушкина</h3>
+							<img src="#" alt="" class="playbill__poster">
+							<p class="playbill__date">Выставка до 1 ноября</p>
+							<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
+								текст Текст о музее текст
+							</p>
+							<a href="" class="playbill__buy">Купить билет</a>
+						</article>
+					</li>
 				</ul>
-				<div class="tabs__content">
-					<div class="tab__item" id="museum-tab_1">
-						<ul>
+			</section>
+			<section class="section">
+				<h2 class="title">Музей</h2>
+				<div class="tabs">
+					<div role="tablist" aria-label="Информация о музее">
+					  <button role="tab" aria-selected="true" aria-controls="buildings-tab" id="buildings">
+						Здания
+					  </button>
+					  <button role="tab" aria-selected="false" aria-controls="history-tab" id="history" tabindex="-1">
+						История
+					  </button>
+					</div>
+					<div tabindex="0" role="tabpanel" id="buildings-tab" aria-labelledby="buildings">
+						<ul class="list">
 							<li>
 								<div class="card">
 									<h3 class="card__title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
@@ -240,7 +169,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="tab__item">
+					<div tabindex="0" role="tabpanel" id="history-tab" aria-labelledby="history" hidden="hidden">
 						<p>Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших
 							в России художественных собраний зарубежного искусства с древнейших времен до наших дней.
 						</p>
@@ -257,61 +186,65 @@
 							выставочном, образовательном и исследовательском. Таким образом, ГМИИ им. А.С. Пушкина
 							представляет собой открытую, интерактивную сцену, демонстрирующую развитие мировой культуры
 							с древности до наших дней, живое, знакомое с детства пространство для получения знаний и
-							общения.</p>
+							общения.
+						</p>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="section">
-			<h2 class="title">Онлайн-трансляции</h2>
-			<div class="video">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/5qRR-5H1XgU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</section>
-		<section class="section">
-			<h2 class="title">Экскурсии и лекции в прямом эфире</h2>
-			<p>
-				С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых и
-				детей, оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom; предусмотрен
-				формат живого общения с возможностью задавать вопросы экскурсоводу (лектору).
-				<a href="#" class="inline-link">Подробнее</a>.
-			</p>
-			<p>
-				Мы будем благодарны за любое <a href="#" class="inline-link">пожертвование</a>. Все поступившие средства
-				будут направлены на организацию онлайн-проектов для наших посетителей.
-			</p>
-		</section>
-	</main>
+			</section>
+			<section class="section">
+				<h2 class="title">Онлайн-трансляции</h2>
+				<div class="video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/5qRR-5H1XgU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+			<section class="section">
+				<h2 class="title">Экскурсии и лекции в прямом эфире</h2>
+				<p>
+					С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых и
+					детей, оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom; предусмотрен
+					формат живого общения с возможностью задавать вопросы экскурсоводу (лектору).
+					<a href="#" class="inline-link">Подробнее</a>.
+				</p>
+				<p>
+					Мы будем благодарны за любое <a href="#" class="inline-link">пожертвование</a>. Все поступившие средства
+					будут направлены на организацию онлайн-проектов для наших посетителей.
+				</p>
+			</section>
+		</main>
+	</div>
 	<footer class="site-footer">
-		<div class="site-footer__item">
-			<ul>
-				<li><a href="#">Посетителям с ограниченными возможностями</a></li>
-				<li><a href="#">Билеты и льготы</a></li>
-				<li><a href="#">Противодействие коррупции</a></li>
-			</ul>
-			<ul class="socials">
-				<li><a href="#" class="social" title="" arial-label="">mail</a></li>
-				<li><a href="#" class="social" title="" arial-label="">telegram</a></li>
-				<li><a href="#" class="social" title="" arial-label="">facebook</a></li>
-			</ul>
-		</div>
-		<div class="site-footer__item">
-			<div class="subscribe">
-				<h2 class="subscribe__title">Подписка на новости</h2>
-				<form action="?" class="form">
-					<label class="form__label input-group">
-						<span class="input-group__text">E-mail</span>
-						<input type="text" class="form__input input-group__input">
-					</label>
-					<label class="form__label">
-						<input type="checkbox" class="form__input">
-						<span>Согласен на обработку персональных данных</span>
-					</label>
-					<button type="submit" class="btn">Подписаться</button>
-				</form>
+		<div class="site-container">
+			<div class="site-footer__item">
+				<ul>
+					<li><a href="#">Посетителям с ограниченными возможностями</a></li>
+					<li><a href="#">Билеты и льготы</a></li>
+					<li><a href="#">Противодействие коррупции</a></li>
+				</ul>
+				<ul class="socials">
+					<li><a href="#" class="social" title="" arial-label="">mail</a></li>
+					<li><a href="#" class="social" title="" arial-label="">telegram</a></li>
+					<li><a href="#" class="social" title="" arial-label="">facebook</a></li>
+				</ul>
+			</div>
+			<div class="site-footer__item">
+				<div class="subscribe">
+					<h2 class="subscribe__title">Подписка на новости</h2>
+					<form action="?" class="form">
+						<label class="form__label input-group">
+							<span class="input-group__text">E-mail</span>
+							<input type="text" class="form__input input-group__input">
+						</label>
+						<label class="form__label">
+							<input type="checkbox" class="form__input">
+							<span>Согласен на обработку персональных данных</span>
+						</label>
+						<button type="submit" class="btn">Подписаться</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</footer>
+	<script src="main.js"></script>
 </body>
 
 </html>
