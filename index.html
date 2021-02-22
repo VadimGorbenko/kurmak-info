@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<title>Государственный музей изобразительных искусств имени А.С. Пушкина</title>
 </head>
@@ -19,12 +20,12 @@
 					<a href="#main" class="skipplink">Перейти к основному содержимому</a>
 				</div>
 				<div class="site-nav__top">
-					<div class="logo" href="/">
+					<div class="logo">
 						<img src="assets/img/logo.jpg" alt="Здание - музей имени А.С. Пушкина" class="logo__image" width="200" height="42">
 					</div>
 					<form action="/search.php" class="inline-search" role="search">
 						<input type="search" class="inline-search__input">
-						<button type="submit" class="inline-search__sumbit" aria-label="Искать">icon</button>
+						<button type="submit" class="inline-search__sumbit" aria-label="Искать" title="Искать"></button>
 					</form>
 					<div class="language-switcher" aria-label="Поддерживаемые языки">
 						<span class="language-switcher__item language-switcher__item_active" aria-current="true" aria-label="Русский">
@@ -32,31 +33,29 @@
 						</span>
 						<a href="/en" hreflang="en" aria-label="English" lang="en" class="language-switcher__item">EN</a>
 					</div>
-					<a href="/login" class="login js-to-popup-activator" aria-label="Авторизация" title="Авторизация">icon</a>
+					<a href="/login" class="login js-to-popup-activator" aria-label="Авторизация" title="Авторизация"></a>
 				</div>
 				<div class="site-nav__main">
 					<ul class="nav-list" aria-label="Основные разделы">
-						<li><a href="#" class="nav-list__link">Музей</a></li>
-						<li><a href="#" class="nav-list__link">Посетителям</a></li>
-						<li><a href="#" class="nav-list__link">Выставки и события</a></li>
-						<li><a href="#" class="nav-list__link">Купить билеты</a></li>
-						<li><a href="#" class="nav-list__link">Стать другом</a></li>
-						<li><a href="#" class="nav-list__link">Онлайн магазин</a></li>
+						<li><a href="#" class="nav-list__link link">Музей</a></li>
+						<li><a href="#" class="nav-list__link link">Посетителям</a></li>
+						<li><a href="#" class="nav-list__link link">Выставки и события</a></li>
+						<li><a href="#" class="nav-list__link link">Купить билеты</a></li>
+						<li><a href="#" class="nav-list__link link">Стать другом</a></li>
+						<li><a href="#" class="nav-list__link link">Онлайн магазин</a></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
 		<main id="main" class="site-main">
+			<h1 class="v-h"><abbr title="Государственный музей изобразительных искусств">ГМИИ</abbr> им
+				А.С. Пушкина.</h1>
 			<section class="posters">
 				<h2 class="v-h">Анонсы</h2>
 				<div id="myCarousel" class="carousel" aria-roledescription="carousel">
 					<div class="controls">
-						<button class="previous" aria-controls="myCarousel-items" aria-label="Предыдущий слайд">
-							prev
-						</button>
-						<button class="next" aria-controls="myCarousel-items" aria-label="Следующий слайд">
-							next
-						</button>
+						<button class="previous" aria-controls="myCarousel-items" aria-label="Предыдущий слайд"></button>
+						<button class="next" aria-controls="myCarousel-items" aria-label="Следующий слайд"></button>
 					</div>
 					<div id="myCarousel-items" class="carousel-items" aria-live="off">
 						<figure class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 из 2">
@@ -81,44 +80,44 @@
 			</section>
 			<section class="section">
 				<h2 class="title">Выставки и события</h2>
-				<div class="filters">
-					<button class="js-filter filter-label filter-label_active">Все</button>
-					<button class="js-filter filter-label">Сегодня</button>
-					<button class="js-filter filter-label">Завтра</button>
+				<div class="filter-controls js-filter-controls">
+					<button class="control-btn" type="button" data-date="all" aria-pressed="true">Все</button>
+					<button class="control-btn" type="button" data-date="today" aria-pressed="false">Сегодня</button>
+					<button class="control-btn" type="button" data-date="tomorrow" aria-pressed="false">Завтра</button>
 				</div>
-				<ul class="list js-filter-target">
+				<ul class="list list-grid js-filter-target" tabindex="-1">
 					<li data-date="tomorrow">
-						<article class="playbill">
-							<h3 class="playbill__title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
-							<img src="#" alt="" class="playbill__poster">
-							<p class="playbill__date">Выставка до 20 ноября</p>
-							<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
+						<article class="card">
+							<h3 class="card__title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
+							<img src="assets/img/event-1.jpg" alt="" class="card__img" width="312" height="148">
+							<p class="card__date">Выставка до 20 ноября</p>
+							<p class="card__text">Текст о музее текст Текст о музее текст Текст о музее
 								текст Текст о музее текст
 							</p>
-							<a href="#" class="playbill__buy">Купить билет</a>
+							<a href="#" class="card__buy">Купить билет</a>
 						</article>
 					</li>
 					<li data-date="today">
-						<article class="playbill">
-							<h3 class="playbill__title">Тату</h3>
-							<img src="#" alt="" class="playbill__poster">
-							<p class="playbill__date">Выставка до 27 сентября</p>
-							<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
+						<article class="card">
+							<h3 class="card__title">Тату</h3>
+							<img src="assets/img/event-2.jpg" alt="" class="card__img" width="312" height="148">
+							<p class="card__date">Выставка до 27 сентября</p>
+							<p class="card__text">Текст о музее текст Текст о музее текст Текст о музее
 								текст Текст о музее текст
 							</p>
-							<a href="" class="playbill__buy">Купить билет</a>
+							<a href="" class="card__buy">Купить билет</a>
 						</article>
 					</li>
 					<li data-date="tomorrow">
-						<article class="playbill">
-							<h3 class="playbill__title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ
+						<article class="card">
+							<h3 class="card__title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ
 								им. А.С. Пушкина</h3>
-							<img src="#" alt="" class="playbill__poster">
-							<p class="playbill__date">Выставка до 1 ноября</p>
-							<p class="playbill__text">Текст о музее текст Текст о музее текст Текст о музее
+							<img src="assets/img/event-3.jpg" alt="" class="card__img" width="312" height="148">
+							<p class="card__date">Выставка до 1 ноября</p>
+							<p class="card__text">Текст о музее текст Текст о музее текст Текст о музее
 								текст Текст о музее текст
 							</p>
-							<a href="" class="playbill__buy">Купить билет</a>
+							<a href="" class="card__buy">Купить билет</a>
 						</article>
 					</li>
 				</ul>
@@ -126,45 +125,62 @@
 			<section class="section">
 				<h2 class="title">Музей</h2>
 				<div class="tabs">
-					<div role="tablist" aria-label="Информация о музее">
-					  <button role="tab" aria-selected="true" aria-controls="buildings-tab" id="buildings">
+					<div class="tabs__labels" role="tablist" aria-label="Информация о музее">
+					  <button type="button" class="control-btn" role="tab" aria-selected="true" aria-controls="buildings-tab" id="buildings">
 						Здания
 					  </button>
-					  <button role="tab" aria-selected="false" aria-controls="history-tab" id="history" tabindex="-1">
+					  <button type="button" class="control-btn" role="tab" aria-selected="false" aria-controls="history-tab" id="history" tabindex="-1">
 						История
 					  </button>
 					</div>
 					<div tabindex="0" role="tabpanel" id="buildings-tab" aria-labelledby="buildings">
-						<ul class="list">
+						<ul class="list list-grid">
 							<li>
 								<div class="card">
-									<h3 class="card__title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
-									<img src="#" alt="" class="card__img">
-									<p class="card__date">Выставка до 20 ноября</p>
-									<p class="card__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст о
-										музее текст</p>
-									<a href="#" class="card__buy">Купить билет</a>
+									<h3 class="card__title">МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА</h3>
+									<img src="assets/img/museum-1.png" alt="" class="card__img" width="312" height="148">
+									<p class="card__text">ул. Большая Бронная, 2/6, 16 этаж, кв. 58</p>
+									<a href="#" class="card__buy">Подробнее</a>
 								</div>
 							</li>
 							<li>
 								<div class="card">
-									<h3 class="card__title">Тату</h3>
-									<img src="#" alt="" class="card__img">
-									<p class="card__date">Выставка до 27 сентября</p>
-									<p class="card__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст о
-										музее текст</p>
-									<a href="" class="card__buy">Купить билет</a>
+									<h3 class="card__title">ЦЭВ «МУСЕЙОН»</h3>
+									<img src="assets/img/museum-2.png" alt="" class="card__img" width="312" height="148">
+									<p class="card__text">Колымажный пер., 6/2, 3 (вход с Малого Знаменского переулка)</p>
+									<a href="" class="card__buy">Подробнее</a>
 								</div>
 							</li>
 							<li>
 								<div class="card">
-									<h3 class="card__title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С.
-										Пушкина</h3>
-									<img src="#" alt="" class="card__img">
-									<p class="card__date">Выставка до 1 ноября</p>
-									<p class="card__text">Текст о музее текст Текст о музее текст Текст о музее текст Текст о
-										музее текст</p>
-									<a href="" class="card__buy">Купить билет</a>
+									<h3 class="card__title">УСАДЬБА ЛОПУХИНЫХ</h3>
+									<img src="assets/img/museum-3.png" alt="" class="card__img" width="312" height="148">
+									<p class="card__text">Малый Знаменский пер., 3/5с4</p>
+									<a href="" class="card__buy">Подробнее</a>
+								</div>
+							</li>
+							<li>
+								<div class="card">
+									<h3 class="card__title">УЧЕБНЫЙ МУЗЕЙ</h3>
+									<img src="assets/img/museum-4.png" alt="" class="card__img" width="312" height="148">
+									<p class="card__text">ул. Чаянова, 15</p>
+									<a href="#" class="card__buy">Подробнее</a>
+								</div>
+							</li>
+							<li>
+								<div class="card">
+									<h3 class="card__title">ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ</h3>
+									<img src="assets/img/museum-5.png" alt="" class="card__img" width="312" height="148">
+									<p class="card__text">ул. Волхонка, 10</p>
+									<a href="" class="card__buy">Подробнее</a>
+								</div>
+							</li>
+							<li>
+								<div class="card">
+									<h3 class="card__title">ГАЛЕРЕЯ</h3>
+									<img src="assets/img/museum-6.png" alt="" class="card__img" width="312" height="148">
+									<p class="card__text">ул. Волхонка, 14</p>
+									<a href="" class="card__buy">Подробнее</a>
 								</div>
 							</li>
 						</ul>
@@ -194,18 +210,18 @@
 			<section class="section">
 				<h2 class="title">Онлайн-трансляции</h2>
 				<div class="video">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/5qRR-5H1XgU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="1030" height="600" src="https://www.youtube.com/embed/5qRR-5H1XgU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</section>
 			<section class="section">
 				<h2 class="title">Экскурсии и лекции в прямом эфире</h2>
-				<p>
+				<p class="text">
 					С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых и
 					детей, оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom; предусмотрен
 					формат живого общения с возможностью задавать вопросы экскурсоводу (лектору).
 					<a href="#" class="inline-link">Подробнее</a>.
 				</p>
-				<p>
+				<p class="text">
 					Мы будем благодарны за любое <a href="#" class="inline-link">пожертвование</a>. Все поступившие средства
 					будут направлены на организацию онлайн-проектов для наших посетителей.
 				</p>
@@ -214,32 +230,36 @@
 	</div>
 	<footer class="site-footer">
 		<div class="site-container">
-			<div class="site-footer__item">
-				<ul>
-					<li><a href="#">Посетителям с ограниченными возможностями</a></li>
-					<li><a href="#">Билеты и льготы</a></li>
-					<li><a href="#">Противодействие коррупции</a></li>
-				</ul>
-				<ul class="socials">
-					<li><a href="#" class="social" title="" arial-label="">mail</a></li>
-					<li><a href="#" class="social" title="" arial-label="">telegram</a></li>
-					<li><a href="#" class="social" title="" arial-label="">facebook</a></li>
-				</ul>
-			</div>
-			<div class="site-footer__item">
-				<div class="subscribe">
-					<h2 class="subscribe__title">Подписка на новости</h2>
-					<form action="?" class="form">
-						<label class="form__label input-group">
-							<span class="input-group__text">E-mail</span>
-							<input type="text" class="form__input input-group__input">
-						</label>
-						<label class="form__label">
-							<input type="checkbox" class="form__input">
-							<span>Согласен на обработку персональных данных</span>
-						</label>
-						<button type="submit" class="btn">Подписаться</button>
-					</form>
+			<div class="site-footer__inner">
+				<div class="site-footer__item">
+					<ul class="list footer-list">
+						<li><a href="#" class="link">Билеты и льготы</a></li>
+						<li><a href="#" class="link">Противодействие коррупции</a></li>
+					</ul>
+					<div class="socials">
+						<h2 class="socials__title">Соц.сети</h2>
+						<ul class="list socials-list">
+							<li><a href="mailto:kurmak.info" class="social social_mail" title="mail" ><span class="v-h">mail</span></a></li>
+							<li><a href="https://t.me/theartsmuseum" class="social social_tg" title="telegram"  target="_blank"><span class="v-h">telegram</span></a></li>
+							<li><a href="https://www.facebook.com/theartsmuseum/" class="social social_fb" title="facebook"  target="_blank"><span class="v-h">telegram</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="site-footer__item">
+					<div class="subscribe">
+						<h2 class="subscribe__title">Подписка на новости</h2>
+						<form action="?" class="form">
+							<label class="form__label form__item_pos_input">
+								<input type="text" class="form__input input-group__input" required>
+								<span class="input-group__text">E-mail</span>
+							</label>
+							<label class="form__label form__item_pos_agree">
+								<input type="checkbox" class="form__input">
+								<span>Согласен на обработку персональных данных</span>
+							</label>
+							<button type="submit" class="form__item_pos_submit btn">Подписаться</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

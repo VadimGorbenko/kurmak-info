@@ -1,3 +1,32 @@
+// filters
+(function() {
+    var filterControls = document.querySelector('.js-filter-controls')
+    var filteringItemsCont = document.querySelector('.js-filter-target')
+
+    filterControls.addEventListener('click', onFilter)
+
+    function onFilter(evt) {
+        var set = evt.target.dataset.date
+        Array.prototype.forEach.call(filterControls.children, function(item) {
+            if(item.dataset.date === set) {
+                item.setAttribute('aria-pressed', true)
+            } else {
+                item.setAttribute('aria-pressed', false)
+            }
+        })
+        Array.prototype.forEach.call(filteringItemsCont.children, function(item) {
+            if(set === 'all') {
+                item.removeAttribute('hidden')
+            } else if (item.dataset.date === set) {
+                item.removeAttribute('hidden')
+            } else {
+                item.setAttribute('hidden', true)
+            }
+        })
+        filteringItemsCont.focus()    
+    }
+})();
+
 // tabs.js
 /*
  *   This content is licensed according to the W3C Software License at
